@@ -5,7 +5,7 @@ def load_library(file_path)
   emoji_hash = {"get_meaning" => {}, "get_emoticon" => {}}
   library.each do |meaning, emoticons|
     emoji_hash["get_meaning"][emoticons[1]] = meaning
-    emoji_hash["get_meaning"][emoticons[0]] = emoticons[1]
+    emoji_hash["get_emoticon"][emoticons[0]] = emoticons[1]
   end
 end
 
