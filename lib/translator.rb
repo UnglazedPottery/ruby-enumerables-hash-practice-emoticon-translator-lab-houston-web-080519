@@ -1,8 +1,8 @@
 require "yaml"
 
 def load_library(file_path)
-  emoji_library = YAML.load_file(file_path)
-  emoji_library.each do |meaning, emoticon|
+  library = YAML.load_file(file_path)
+  library.each do |meaning, emoticon|
     
   end
 end
